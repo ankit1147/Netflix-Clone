@@ -1,0 +1,231 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    background-color: black;
+}
+.main{
+    background-image: url(Assets/images/bg2.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(1900px,100vw);
+    height: 700px;
+    position: relative;
+}
+
+.main .box{
+    position: absolute;
+    top: 0;
+    height: 700px;
+    width: 100%;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 10%, rgba(0,0,0,0.4319852941176471) 52%, rgba(0,0,0,1) 90%);
+    opacity: 0.85;
+}
+nav{
+    height: 80px;
+    width: 75vw;
+    margin: auto;
+    display: flex;
+    justify-content:space-between;
+    /* align-items: center; */
+}
+nav img{
+    margin:20px 2px;
+    width: 150px;
+    position: relative;
+    z-index: 20;
+}
+.buttons{
+    margin: 25px 2px;
+    z-index: 10;
+}
+.content{
+    font-family: "Poppins", sans-serif;
+    height:calc(100% - 80px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    /* margin: 200px 0px 0px 0px; */
+    gap: 18px;
+    padding: 0px 25px;
+}
+.content> :nth-child(1){
+    text-align: center;
+    font-size: 44px;
+    font-weight: 800;
+}
+.content> :nth-child(2){
+    text-align: center;
+    font-size: 22px;
+    font-weight: 400;
+}
+.content> :nth-child(3){
+    text-align: center;
+    font-size: 18px;
+    font-weight: 250;
+}
+.line{
+    height: 7px;
+    background-color: rgba(128, 128, 128, 0.3);
+}
+.content .content-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+.btn1{
+    padding: 3px 20px;
+    font-weight: 400px;
+    font-size: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.302);
+    border-radius: 4px;
+    color: white;
+    background-color: rgb(167 125 125 / 21%);
+}
+.btn2{
+    padding: 6px 15px;
+    font-weight: 500;
+    border: 1px solid black;
+    border-radius: 4px;
+    font-size: 13px;
+    background-color: red;
+    color: white;
+}
+.btn3{
+    padding: 9px 16px;
+    font-size: 23px;
+    border: 1px solid black;
+    border-radius: 4px;
+    font-weight: 500;
+    background-color: red;
+    color: white;
+}
+.content-btn input{
+    padding: 14px 148px 14px 12px;  
+    font-size: 15px;
+    border: 1px solid rgb(160, 153, 153);
+    border-radius: 4px;
+    background-color: rgba(60, 48, 48, 0.322);
+    color: white;
+}
+
+.first{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1px;
+    max-width: 1050px;
+    padding: 55px 0px;
+    /* height: 500px; */
+    margin: auto;
+    color: white;
+}
+.secImg{
+    display: flex;
+    position: relative;
+}
+.secImg Img{
+    width: 450px;
+    position: relative;
+    z-index: 10;
+}
+.secImg video{
+    position: absolute;
+    width: 330px;
+    top: 101px;
+    right: 90px;
+}
+.third .secImg video{
+    width: 300px;
+    top: 69px;
+    right: 107px;
+}
+.first > div{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+.first > div :nth-child(1){
+    font-size: 48px;
+    font-weight: 700;
+}
+.first > div :nth-child(2){
+    font-size: 22px;
+}
+
+.faq h2{
+    font-size: 48px;
+    text-align: center;
+    color: white;
+}
+.faq{
+    padding: 50px 0px 20px 0px;
+}
+.faqbox{
+    max-width: 72vw;
+    margin: 10px auto;
+    background-color: #2f2a2a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 20px;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.2s ease-out;
+}
+.faqbox img{
+    width: 40px;
+}
+.faqbox:hover{
+    
+    background-color: #414141;
+}
+.Email> :nth-child(1){
+    text-align: center;
+    font-size: 18px;
+    font-weight: 300;
+}
+.Email{
+    padding: 10px 0px 65px 0px;
+}
+footer{
+    max-width: 950px;
+    padding: 42px 50px 62px 150px;
+    color: rgba(255, 255, 255, 0.678);
+}
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* gap: 75px; */
+}
+.footer-items{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 14px;
+}
+footer .ques{
+    padding: 25px 0px;
+}
+.footer a{
+    text-decoration: underline;
+    color:rgba(255, 255, 255, 0.678);
+}
+footer button{
+    margin: 25px 0px;
+}
+.end{
+    font-size: 14px;
+}
+
